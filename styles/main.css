@@ -1,0 +1,84 @@
+/* 
+**********************
+GOGLE FONTS 
+**********************
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* 
+**********************
+VARIABLES 
+**********************
+*/
+:root{
+    --primaryColor:#f15025;
+    --mainBlack:#222;
+    --mainWhite:#fff;
+    --offWhite:#f7f7f7;
+    --darkGrey:#afafaf;
+    --mainTransition:all 0.3s linear;
+    --mainSpacing:0.2rem;
+    --primary-ff:"Fira Code", "monospace";
+    --weight-300:300;
+    --weight-400:400;
+}
+
+/* 
+**********************
+GLOBAL STYLES 
+**********************
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primary-ff);
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+img :not(.logo-img) {
+    width: 100%;
+    display: block;
+}
+
+h1,h2,h3 {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1.25rem;
+    font-weight: var(--weight-400);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    margin-bottom: 0;
+}
+p {
+    font-weight: var(--weight-300);
+    font-size: 0.7rem;
+    line-height: 2;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 3rem;
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 3px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.btn:hover {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+}
