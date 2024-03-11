@@ -190,11 +190,9 @@ CARDS
     margin: 2rem auto;
     display: grid;
     column-gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .card {
-    max-height: 600px;
-    overflow: hidden;
     background: var(--offWhite);
     border: 2px solid var(--mainBlack);
     border-radius: 0.5rem;
@@ -210,7 +208,8 @@ CARDS
     -o-transition: var(--mainTransition);
     box-shadow: var(--lightShadow);
     display: grid;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 .card-img {
     border-top-left-radius: 0.5rem;
@@ -230,8 +229,6 @@ CARDS
     font-size: 0.85rem;
     font-weight: 400;
     color: var(--darkGrey);
-    max-height: 136px;
-    overflow: hidden;
 }
 
 .card-footer {
