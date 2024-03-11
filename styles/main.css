@@ -188,8 +188,13 @@ CARDS
     width: 80vw;
     max-width: 1170px;
     margin: 2rem auto;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
 .card {
+    max-height: 600px;
+    overflow: hidden;
     background: var(--offWhite);
     border: 2px solid var(--mainBlack);
     border-radius: 0.5rem;
@@ -204,6 +209,8 @@ CARDS
     -ms-transition: var(--mainTransition);
     -o-transition: var(--mainTransition);
     box-shadow: var(--lightShadow);
+    display: grid;
+    align-items: flex-start;
 }
 .card-img {
     border-top-left-radius: 0.5rem;
@@ -259,24 +266,4 @@ CARDS
     -moz-transform: translateY(-0.25rem);
     -ms-transform: translateY(-0.25rem);
     -o-transform: translateY(-0.25rem);
-}
-@media screen and (min-width:768px) {
-    .cards-center {
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-        column-gap: 2rem;
-    }
-}
-@media screen and (min-width:998px) {
-    .card-info >p {
-        max-height: 108px;
-    }
-}
-@media screen and (min-width:1170px) {
-    .cards-center {
-        grid-template-columns: repeat(3 , 1fr);
-    }
-    .card-info >p {
-        max-height: 136px;
-    }
 }
