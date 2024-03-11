@@ -122,3 +122,48 @@ MAIN NAVBAR
     }
     
 }
+
+/* 
+**********************
+HERO
+**********************
+*/
+.hero-header {
+    min-height: 100vh;
+    color:var(--mainBlack);
+    background: var(--primaryColor);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero-banner> h1 {
+    font-weight: 600;
+}
+.hero-banner p{
+    width: 80%;
+    max-width: 550px;
+    font-size: 1rem;
+    color: var(--darkGrey);
+}
+strong {
+    color: var(--mainBlack);
+}
+@media screen and (max-width:600px) {
+    .hero-banner{
+        padding: 0 3rem;
+    }
+}
+@media screen and (min-width:600px) {
+    .hero-banner {
+        text-align: center;
+    }
+    .hero-banner p {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:768px) {
+    .hero-header {
+        background: linear-gradient(rgba(241,80,37,0.75),rgba(245,245,245,0.3)), url("../assets/images/banner/banner.jpg") center/cover fixed no-repeat;
+    }
+}
