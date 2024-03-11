@@ -276,4 +276,7 @@ CARDS
     .cards-center {
         grid-template-columns: repeat(3 , 1fr);
     }
+    .card-info >p {
+        max-height: 136px;
+    }
 }
