@@ -22,50 +22,82 @@
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <!-- navbar  -->
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="./views/hero.html">hero</a>
-          </li>
-          <li><a href="./views/card.html">cards</a></li>
-          <li><a href="./views/tiles.html">tiles</a></li>
-          <li><a href="./views/layout.html">layout</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- END OF HEADER -->
-    <!-- CONTENT -->
-    <section class="content-section">
-      <div class="content-header">
-        <h2>grid makes layout easy</h2>
+    <!-- NAVBAR -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
       </div>
-      <p class="content-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga
-        error, blanditiis amet molestias laboriosam tempora eos! Inventore quos
-        molestias quia neque quasi amet placeat illum porro vitae. Laudantium,
-        voluptatum magnam. Ipsa tempore, iste reprehenderit molestias omnis
-        harum facere eos, soluta itaque neque rerum. Cum impedit facilis ipsam
-        fuga tenetur?
-      </p>
-    </section>
-    <!-- END OF CONTENT -->
-    <!-- SIDEBAR -->
-    <section class="sidebar">
-      <span><i class="fab fa-facebook"></i></span>
-      <span><i class="fab fa-twitter"></i></span>
-      <span><i class="fab fa-squarespace"></i></span>
-      <span><i class="fab fa-instagram"></i></span>
-      <span><i class="fab fa-linkedin"></i></span>
-    </section>
-    <!-- END OF SIDEBAR -->
-    <!-- FOOTER -->
-    <div class="footer">
-      <p>copyright &copy; <span>Shubham Saha</span> all right reserved</p>
-    </div>
-    <!-- END OF FOOTER -->
+      <ul class="nav-items">
+        <li><a href="./views/hero.html">hero</a></li>
+        <li><a href="./views/card.html">cards</a></li>
+        <li><a href="./views/tiles.html">tiles</a></li>
+        <li><a href="./views/layout.html">layout</a></li>
+      </ul>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <main class="main">
+      <!-- CONTENT -->
+      <section class="content-section">
+        <div class="content-header">
+          <h2>grid makes layout easy</h2>
+        </div>
+        <p class="content-info">
+          CSS Grid Layout is a powerful tool for creating complex layouts in web
+          development. It allows you to create grid-based layouts with rows and
+          columns, providing precise control over the placement and sizing of
+          elements within the grid. CSS Grid makes it easier to create
+          responsive layouts that adapt to different screen sizes and devices,
+          by defining grid templates that automatically adjust based on
+          available space, you can ensure that your layout looks good on various
+          devices. Grid-based design is a popular approach in web design for
+          creating visually appealing and organized layouts. With CSS Grid, you
+          can easily divide your webpage into sections and align elements within
+          those sections using the grid system. CSS Grid can be used to create
+          navigation menus with evenly spaced items that automatically adjust
+          their size and position based on the available space, this is useful
+          for creating both horizontal and vertical menus. Card-based layouts
+          are commonly used in web design for displaying content such as
+          articles, products, or user profiles. CSS Grid allows you to create
+          flexible card layouts where each card can adjust its size and position
+          based on the grid configuration. CSS Grid can also be used to create
+          masonry layouts, where elements are arranged in a grid with variable
+          heights. This is useful for displaying images or other content in a
+          visually appealing way without wasting space.CSS Grid is ideal for
+          creating responsive image galleries where images are arranged in a
+          grid with consistent spacing and alignment. You can use features like
+          grid-auto-flow to automatically fill the grid with images and ensure
+          they resize appropriately on different devices. CSS Grid can simplify
+          the creation of form layouts by providing a flexible grid system for
+          arranging form elements such as input fields, labels, and buttons. You
+          can use grid areas to define different sections of the form and
+          control the alignment of elements within those sections. Overall, CSS
+          Grid offers a wide range of possibilities for creating sophisticated
+          layouts in web development, allowing you to achieve precise control
+          over the positioning and sizing of elements on your webpage.
+        </p>
+      </section>
+      <!-- END OF CONTENT -->
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <span><i class="fab fa-facebook"></i></span>
+        <span><i class="fab fa-twitter"></i></span>
+        <span><i class="fab fa-squarespace"></i></span>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fab fa-linkedin"></i></span>
+      </section>
+      <!-- END OF SIDEBAR -->
+      <!-- FOOTER -->
+      <div class="footer">
+        <p>copyright &copy; <span>Shubham Saha</span> all right reserved</p>
+      </div>
+      <!-- END OF FOOTER -->
+    </main>
     <a href="../index.html" class="btn">back to home</a>
+    <script src="../scripts/app.js"></script>
   </body>
 </html>
