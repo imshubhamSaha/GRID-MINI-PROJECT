@@ -180,7 +180,7 @@ CARDS
     background:#fff8dc;
     padding: 4rem 0;
 }
-.cards-title {
+.title {
     text-align: center;
     color: var(--mainBlack);
 }
@@ -263,4 +263,114 @@ CARDS
     -moz-transform: translateY(-0.25rem);
     -ms-transform: translateY(-0.25rem);
     -o-transform: translateY(-0.25rem);
+}
+/* 
+**********************
+TILES
+**********************
+*/
+.tiles {
+    padding: 4rem 0;
+}
+
+.tiles-center {
+    width:90vw;
+    max-width: 1170px;
+    margin: 2rem auto;
+    display: grid;
+    row-gap: 2rem;
+}
+.tiles-center img {
+    height: 400px;
+    object-fit: cover;
+}
+.tiles-center img, .tiles-center article {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    transition: var(--mainTransition);
+    -webkit-transition:var(--mainTransition);
+    -moz-transition:var(--mainTransition);
+    -ms-transition:var(--mainTransition);
+    -o-transition:var(--mainTransition);
+}
+.tiles-center article {
+    border: 1px solid #5b03adda;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1170px) {
+    .tiles-center article {
+        box-shadow: var(--lightShadow);
+    }
+    
+    .tiles-center img:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    .tiles-center article:hover {
+        box-shadow: var(--darkShadow);
+    }
+}
+@media screen and (min-width:768px) {
+    .tiles-center {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .tiles-center img {
+        height: 350px;
+    }
+}
+@media screen and (min-width:992px) {
+    .tiles-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width:1170px) {
+    .tiles-center {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 250px);
+        grid-template-areas:
+        "a a a b"
+        "a a a c"
+        "d d d d"
+        "e f f f"
+        "e g h i";
+        
+    }
+    .tiles-center img {
+        height:100%;
+    }
+    .tile-1 {
+        grid-area: a;
+    }
+    .tile-2 {
+        grid-area: b;
+    }
+    .tile-3 {
+        grid-area: c;
+    }
+    .tile-4 {
+        grid-area: d;
+    }
+    .tile-5 {
+        grid-area: e;
+    }
+    .tile-6 {
+        grid-area: f;
+    }
+    .tile-7 {
+        grid-area: g;
+    }
+    .tile-8 {
+        grid-area: h;
+    }
+    .tile-9 {
+        grid-area: i;
+    }
 }
