@@ -430,6 +430,7 @@ LAYOUT
     letter-spacing: var(--mainSpacing);
     color: var(--mainBlack);
     font-size: 1.2rem;
+    font-weight: 700;
     transition: var(--mainTransition);
     -webkit-transition: var(--mainTransition);
     -moz-transition: var(--mainTransition);
@@ -509,4 +510,33 @@ LAYOUT
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
+}
+
+@media  screen and (min-width:768px) {
+    .nav-btn {
+        display: none;
+    }
+    .navbar {
+        position: static;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        
+    }
+    .navbar-header {
+        display: none;
+    }
+    .nav-items {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+    }
+    .navbar a:hover {
+        background: none;
+        padding: 0.75rem 1rem;
+        border:none;
+    }
+    
 }
