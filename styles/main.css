@@ -531,7 +531,7 @@ LAYOUT
     }
     .nav-items {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
         justify-items: center;
     }
     .navbar a:hover {
@@ -551,12 +551,10 @@ LAYOUT
     .navbar {
         width: 200px;
         display: grid;
-        grid-template-columns: 200px;
-        grid-template-rows: 1fr;
         box-shadow: none;
     }
-    .navbar ul {
-        grid-template-columns: 1fr;
+    .navbar ul { 
+        grid-template-columns: 200px;
         align-items: center;
         min-height: 100vh;
     }
@@ -599,5 +597,4 @@ LAYOUT
     .footer {
         grid-row:row-2-end/end ;
     }
-
 }
