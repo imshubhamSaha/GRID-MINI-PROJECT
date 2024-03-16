@@ -7,24 +7,44 @@
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
-      href="../assets/images/icons/favicon.png"
+      href="../public/assets/images/icons/favicon.png"
       type="image/x-icon"
     />
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="../public/assets/fontawesome-free-6.5.1-web/css/all.css"
     />
-    <!-- STYLE SHEET -->
-    <link rel="stylesheet" href="../styles/main.css" />
+    <!-- STYLE SHEETS -->
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="../public/styles/main.css" />
+    <!-- INDIVIDUAL -->
+    <link rel="stylesheet" href="../public/styles/hero.css" />
   </head>
   <body>
-    <header class="hero-header">
+    <header class="hero">
+      <!-- NAVBAR -->
+      <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </span>
+      <nav class="navbar main-navbar" id="navbar">
+        <div class="navbar-header">
+          <span class="nav-close" id="nav-close">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <ul class="nav-items hero-nav-items">
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../views/hero.html">banner</a></li>
+          <li><a href="../views/card.html">cards</a></li>
+          <li><a href="../views/tiles.html">tiles</a></li>
+          <li><a href="../views/layout.html">layout</a></li>
+        </ul>
+      </nav>
+      <!-- END OF NAVBAR -->
+
       <div class="hero-banner">
-        <h1>Welcome to Grid Mini Project</h1>
+        <h1>Banner title</h1>
         <p>
           This page is created to demonstrate the <strong>BANNER</strong>,
           created only using Grid. This Page helps me alot to learn more about
@@ -32,6 +52,20 @@
         </p>
       </div>
     </header>
-    <a href="../index.html" class="btn">back to home</a>
+    <!-- SIDEBAR -->
+    <section class="sidebar">
+      <span><i class="fab fa-facebook"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+      <span><i class="fab fa-squarespace"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+      <span><i class="fab fa-linkedin"></i></span>
+    </section>
+    <!-- END OF SIDEBAR -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>copyright &copy; <span>Shubham Saha</span> all right reserved</p>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script src="../public/scripts/app.js"></script>
   </body>
 </html>

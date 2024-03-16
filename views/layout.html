@@ -7,40 +7,42 @@
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
-      href="../assets/images/icons/favicon.png"
+      href="../public/assets/images/icons/favicon.png"
       type="image/x-icon"
     />
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="../public/assets/fontawesome-free-6.5.1-web/css/all.css"
     />
     <!-- STYLE SHEET -->
-    <link rel="stylesheet" href="../styles/main.css" />
+    <!--  GLOBAL  -->
+    <link rel="stylesheet" href="../public/styles/main.css" />
+    <!--  INDIVIDUAL  -->
+    <link rel="stylesheet" href="../public/styles/layout.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <span class="nav-btn" id="nav-btn">
-      <i class="fas fa-bars"></i>
-    </span>
-    <nav class="navbar" id="navbar">
-      <div class="navbar-header">
-        <span class="nav-close" id="nav-close">
-          <i class="fas fa-times"></i>
-        </span>
-      </div>
-      <ul class="nav-items">
-        <li><a href="../index.html">home</a></li>
-        <li><a href="../views/hero.html">banner</a></li>
-        <li><a href="../views/card.html">cards</a></li>
-        <li><a href="../views/tiles.html">tiles</a></li>
-        <li><a href="../views/layout.html">layout</a></li>
-      </ul>
-    </nav>
-    <!-- END OF NAVBAR -->
+    <header>
+      <!-- NAVBAR -->
+      <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </span>
+      <nav class="navbar" id="navbar">
+        <div class="navbar-header">
+          <span class="nav-close" id="nav-close">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <ul class="nav-items">
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../views/hero.html">banner</a></li>
+          <li><a href="../views/card.html">cards</a></li>
+          <li><a href="../views/tiles.html">tiles</a></li>
+          <li><a href="../views/layout.html">layout</a></li>
+        </ul>
+      </nav>
+      <!-- END OF NAVBAR -->
+    </header>
     <main class="main">
       <!-- CONTENT -->
       <section class="content-section">
@@ -98,6 +100,6 @@
       </div>
       <!-- END OF FOOTER -->
     </main>
-    <script src="../scripts/app.js"></script>
+    <script src="../public/scripts/app.js"></script>
   </body>
 </html>
