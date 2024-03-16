@@ -1,0 +1,94 @@
+/* 
+**********************
+CARDS 
+**********************
+*/
+.cards {
+    
+    background:#fff8dc;
+    padding: 4rem 0;
+}
+.title {
+    text-align: center;
+    color: var(--mainBlack);
+}
+.cards-center {
+    width: 80vw;
+    max-width: 1170px;
+    margin: 2rem auto;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card {
+    background: var(--offWhite);
+    border: 2px solid var(--mainBlack);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+    box-shadow: var(--lightShadow);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.card-img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 20rem;
+    object-fit: cover;
+}
+.card-info {
+    padding: 1rem;
+   
+}
+.card-info>h3 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.card-info >p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--darkGrey);
+}
+
+.card-footer {
+    background: var(--lightGrey);
+    padding: 0.75rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.card-footer span {
+    color: var(--primaryColor);
+    font-size: 1.25rem;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+
+.card:hover {
+    box-shadow: var(--darkShadow);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+.card-footer span:hover {
+    color: blue;
+    transform: translateY(-0.25rem);
+    -webkit-transform: translateY(-0.25rem);
+    -moz-transform: translateY(-0.25rem);
+    -ms-transform: translateY(-0.25rem);
+    -o-transform: translateY(-0.25rem);
+}
