@@ -92,6 +92,9 @@ p {
     text-align: center;
     color: var(--mainBlack);
 }
+.title h1 {
+    font-size: 2rem;
+}
 /* 
 **********************
 HERO BANNER   
