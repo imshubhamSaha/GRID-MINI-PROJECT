@@ -88,7 +88,10 @@ p {
     background: var(--primaryColor);
     color: var(--mainWhite) ;
 }
-
+.title {
+    text-align: center;
+    color: var(--mainBlack);
+}
 /* 
 **********************
 HERO BANNER   
@@ -243,7 +246,7 @@ SIDE-BAR AND FOOTER
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
-    height: 3rem;
+    min-height: 3rem;
 }
 .main-sidebar {
     background: var(--darkGrey);
@@ -254,7 +257,7 @@ SIDE-BAR AND FOOTER
     text-align: center;
     padding: 0.5rem 0;
     text-transform: capitalize;
-    height: 3rem;
+    min-height: 3rem;
 }
 
 .footer p {
@@ -332,13 +335,13 @@ MEDIA QUERIES
         grid-template-columns: 200px 1fr;
         grid-template-rows: 1fr;
     }
-    .navbar {
+    .custom-navbar {
         min-height: calc(100vh - 6rem);
         display: grid;
         position: static;
         box-shadow: none;
     }
-    .navbar ul { 
+    .custom-navbar ul { 
         grid-template-columns: 200px;
         align-items: center;
     }
