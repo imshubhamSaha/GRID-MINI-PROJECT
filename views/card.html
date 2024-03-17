@@ -22,7 +22,25 @@
     <link rel="stylesheet" href="../public/styles/card.css" />
   </head>
   <body>
-    <header></header>
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- NAVBAR -->
+    <nav class="navbar main-navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items hero-nav-items">
+        <li><a href="../index.html">home</a></li>
+        <li><a href="../views/hero.html">banner</a></li>
+        <li><a href="../views/card.html">cards</a></li>
+        <li><a href="../views/tiles.html">tiles</a></li>
+        <li><a href="../views/layout.html">layout</a></li>
+      </ul>
+    </nav>
+    <!-- END OF NAVBAR -->
     <section class="cards">
       <div class="title">
         <h1>seasons cards</h1>
@@ -176,6 +194,10 @@
         <!-- END OF SINGLE CARD -->
       </div>
     </section>
-    <a href="../index.html" class="btn">back to home</a>
+    <footer class="footer">
+      <p>copyright &copy; <span>Shubham Saha</span> all right reserved</p>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script src="../public/scripts/app.js"></script>
   </body>
 </html>
