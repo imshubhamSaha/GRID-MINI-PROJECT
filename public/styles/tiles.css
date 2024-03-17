@@ -4,11 +4,13 @@ TILES
 **********************
 */
 .tiles {
-    padding: 4rem 0;
+    padding: 3rem 0;
+    width: 100%;
+    min-height: calc(100vh - 3rem);
 }
 
 .tiles-center {
-    width:90vw;
+    width:90%;
     max-width: 1170px;
     margin: 2rem auto;
     display: grid;
@@ -52,6 +54,9 @@ TILES
     }
 }
 @media screen and (min-width:768px) {
+    .tiles {
+        min-height: calc(100vh - 6.4rem);
+    }
     .tiles-center {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
