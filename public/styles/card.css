@@ -16,7 +16,9 @@ CARDS
     max-width: 1170px;
     margin: 2rem auto;
     display: grid;
-    column-gap: 2rem;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
 }
 .card {
@@ -43,7 +45,8 @@ CARDS
     border-top-right-radius: 0.5rem;
     height: 300px;
     overflow: hidden;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .card-info {
     padding: 1rem;  

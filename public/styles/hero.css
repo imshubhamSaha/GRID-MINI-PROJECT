@@ -5,6 +5,7 @@
 
 @media screen and (min-width:768px) {
     .hero {
+        background: -webkit-gradient(linear,left top, left bottom,from(rgba(241,80,37,0.75)),to(rgba(245,245,245,0.3))), url("../assets/images/banner/banner.jpg") center/cover fixed no-repeat;
         background: linear-gradient(rgba(241,80,37,0.75),rgba(245,245,245,0.3)), url("../assets/images/banner/banner.jpg") center/cover fixed no-repeat;
     }
 }
@@ -29,6 +30,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5,1fr);
         min-height: calc(100vh - 3rem);
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
 }

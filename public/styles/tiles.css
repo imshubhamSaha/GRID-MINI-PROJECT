@@ -10,7 +10,7 @@ TILES
 }
 
 .tiles-center {
-    width:90%;
+    width:80%;
     max-width: 1170px;
     margin: 2rem auto;
     display: grid;
@@ -18,7 +18,8 @@ TILES
 }
 .tiles-center img {
     height: 400px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .tiles-center img, .tiles-center article {
     border-radius: 0.5rem;
@@ -59,7 +60,9 @@ TILES
     }
     .tiles-center {
         grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
+        -webkit-column-gap: 2rem;
+           -moz-column-gap: 2rem;
+                column-gap: 2rem;
     }
     .tiles-center img {
         height: 350px;
