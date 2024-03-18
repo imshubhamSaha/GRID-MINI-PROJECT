@@ -102,7 +102,7 @@ HERO BANNER
 */
 
 .hero {
-    min-height: calc(100vh - 3rem - 3rem);
+    min-height: calc(100vh - 6.2rem);
     color:var(--mainBlack);
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
@@ -333,7 +333,7 @@ MEDIA QUERIES
 @media screen and (min-width:1170px) {
     
     .hero {
-        max-height: calc(100vh - 6rem);
+        max-height: calc(100vh - 6.2rem);
         overflow: hidden;
         grid-template-columns: 200px 1fr;
         grid-template-rows: 1fr;
